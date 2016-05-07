@@ -20,7 +20,7 @@ import ua.mai.resume.service.NameService;
  * @see http://devstudy.net
  */
 @WebServlet("/search")
-public class SearchController extends HttpServlet{
+public class SearchController extends HttpServlet { 
 	private static final long serialVersionUID = 2847786613235117603L;
 	private static final Logger LOGGER = LoggerFactory.getLogger(SearchController.class);
 	
@@ -36,7 +36,7 @@ public class SearchController extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		LOGGER.debug("doPost search: {}", req.getParameterMap());
+ 		LOGGER.debug("doPost search: {}", req.getParameterMap());
 		String name = req.getParameter("query");
 		if(!isValid(name)) {
 			req.setAttribute("invalid", Boolean.TRUE);

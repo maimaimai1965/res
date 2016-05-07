@@ -7,7 +7,7 @@ package ua.mai.resume.service;
  */
 public class NameService {
 
-	public static NameService getInstance(){
+	public static NameService getInstance() {
 		return new NameService();
 	}
 
