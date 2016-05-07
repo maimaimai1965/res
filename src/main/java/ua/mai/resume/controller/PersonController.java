@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/profile")
+@WebServlet("/person")
 public class PersonController extends HttpServlet{
 
 	private static final long serialVersionUID = -2007940300578601854L;
